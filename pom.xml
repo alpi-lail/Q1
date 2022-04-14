@@ -29,11 +29,30 @@
      </dependency>
 
      <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+     <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
      <dependency>
          <groupId>io.cucumber</groupId>
          <artifactId>cucumber-java</artifactId>
-         <version>7.2.3</version>
+         <version>6.11.0</version>
      </dependency>
+
+
+     <dependency>
+         <groupId>junit</groupId>
+         <artifactId>junit</artifactId>
+         <version>4.13.2</version>
+         <scope>compile</scope>
+     </dependency>
+
+     <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+     <dependency>
+         <groupId>io.cucumber</groupId>
+         <artifactId>cucumber-junit</artifactId>
+         <version>7.2.3</version>
+         <scope>test</scope>
+     </dependency>
+
+
      <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
      <dependency>
          <groupId>org.projectlombok</groupId>
@@ -65,7 +84,11 @@
          <artifactId>json-simple</artifactId>
          <version>1.1.1</version>
      </dependency>
-
+     <dependency>
+     <groupId>org.seleniumhq.selenium</groupId>
+     <artifactId>selenium-java</artifactId>
+     <version>3.0.0</version>
+     </dependency>
 
  </dependencies>
 

@@ -1,15 +1,16 @@
-Feature:
+@all
+Feature: REST API
   @GET
-  Scenario: Validate status code and validate email
+  Scenario: as an user can validate status code and validate email
 
-    Given I open URL
-    And I validate status code
-    Then I validate email
+    Given user hit endpoint get
+    And user validate status code
+    Then user validate email
 
 
   @POST
-  Scenario: Print Value id and jobs
+  Scenario: as an user can post endpoint create with status code 200 then Print Value id and jobs
 
-    Given I hit base URI
-    And I validate status code create
-    Then I print id and jobs
+    Given user hit endpoint create
+    And user validate status code create
+    Then user print id and jobs
