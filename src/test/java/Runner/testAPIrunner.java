@@ -6,9 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        glue={"src/test/java/stepdefinition/testAPI.java"},
-        plugin = { "pretty", "html:target/testAPIrunner","json:target/testAPIrunner/json"},
-        features={"src/test/java/features/testAPI.feature"})
+        glue = {"stepdefinition"},
+        plugin = {"pretty", "html:target/cucumber/report.html","json:target/cucumber/report.json"},
+        tags = "@GET",
+        features = {"src/test/java/features"})
 
 public class testAPIrunner {
 }
